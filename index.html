@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 		<title>Compound Interest Calculator</title>
 	</head>
@@ -21,6 +22,10 @@
 							<input type="number" id="initialAmount" />
 						</div>
 						<div class="formInput">
+							<label for="monthlyInvestment">Monthly Investment</label>
+							<input type="number" id="monthlyInvestment" />
+						</div>
+						<div class="formInput">
 							<label for="investmentYears">Investment Years</label>
 							<input type="number" id="investmentYears" />
 						</div>
@@ -29,8 +34,8 @@
 							<input type="number" id="rates" />
 						</div>
 						<div class="formInput">
-							<label for="compoundPeriod">Compound Interval</label>
-							<select name="" id="compoundPeriod">
+							<label for="compoundPeriodUnit">Compound Interval</label>
+							<select id="compoundPeriodUnit">
 								<option value="1">Annualy</option>
 								<option value="4">Quartely</option>
 								<option value="2">SemiAnnualy</option>
@@ -38,7 +43,7 @@
 							</select>
 						</div>
 						<div class="formInput">
-							<button type="submit">Calculate</button>
+							<button type="submit" id="calcBtn">Calculate</button>
 						</div>
 					</form>
 				</div>
