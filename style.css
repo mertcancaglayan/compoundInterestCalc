@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	margin: 40px;
+}
+
+.calculator {
+	width: 40%;
+	color: rgb(16, 88, 49);
+}
+
+.heading h3 {
+	font-size: 25px;
+}
+
+.formInput {
+	margin: 15px 0;
+}
+
+.formInput label {
+	display: block;
+}
+
+.formInput input,
+.formInput button,
+.formInput select {
+	width: 75%;
+	padding: 10px;
+	border: 1px solid green;
+	outline: none;
+	border-radius: 3px;
+}
+
+.formInput button {
+	background-color: lightgreen;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+.formInput button:hover {
+	background-color: rgb(61, 109, 61);
+	cursor: pointer;
+	color: aliceblue;
+}
+
+.resultContainer {
+	width: 45%;
+	box-shadow: 0px 0px 8px 5px rgba(168, 161, 161, 0.541);
+}
