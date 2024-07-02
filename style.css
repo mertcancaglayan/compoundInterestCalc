@@ -6,12 +6,12 @@
 
 .container {
 	display: flex;
-	justify-content: center;
-	margin: 40px;
+	justify-content: space-evenly;
+	margin: 40px 0;
 }
 
 .calculator {
-	width: 40%;
+	width: 30%;
 	color: rgb(16, 88, 49);
 }
 
@@ -50,6 +50,22 @@
 }
 
 .resultContainer {
-	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+	width: 60%;
 	box-shadow: 0px 0px 8px 5px rgba(168, 161, 161, 0.541);
+}
+
+#resultTitle {
+	color: black;
+	font-size: 30px;
+}
+
+#resultAmount {
+	font-size: 40px;
+	color: darkgreen;
+	font-weight: 800;
 }
