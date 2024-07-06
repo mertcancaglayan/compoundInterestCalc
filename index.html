@@ -9,11 +9,17 @@
 	</head>
 	<body>
 		<main>
+			<header>
+				<h1>Compound Interest Calculator</h1>
+				<p>
+					See how your savings and investment balances can grow exponentially with the power of compound
+					interest.
+				</p>
+			</header>
 			<section class="container">
 				<div class="calculator">
 					<div class="heading">
-						<h3>Compound Interest Calculator</h3>
-						<p>How your money grows over time using compound interest</p>
+						<h3>Investment Details</h3>
 					</div>
 					<form class="formContainer">
 						<div class="formInput">
@@ -35,9 +41,9 @@
 						<div class="formInput">
 							<label for="compoundPeriodUnit">Compound Interval</label>
 							<select id="compoundPeriodUnit">
-								<option value="1">Annualy</option>
-								<option value="4">Quartely</option>
-								<option value="2">SemiAnnualy</option>
+								<option value="1">Annually</option>
+								<option value="4">Quarterly</option>
+								<option value="2">Semi-Annually</option>
 								<option value="12">Monthly</option>
 							</select>
 						</div>
@@ -53,6 +59,52 @@
 					</div>
 					<canvas id="data-set"></canvas>
 				</div>
+			</section>
+			<section class="content">
+				<article class="expla">
+					<h3>What is compound interest?</h3>
+					<p>
+						Compound interest is a powerful financial concept where you earn interest not just on your
+						initial principal amount but also on the interest that has been added over previous periods.
+						This means that your investment grows at an increasing rate as the interest compounds. Over
+						time, this effect significantly boosts the growth of your savings, allowing your money to work
+						harder and grow faster than with simple interest. The longer you leave your money to compound,
+						the more pronounced the growth will be, making compound interest a key factor in wealth
+						accumulation and financial planning.
+					</p>
+				</article>
+				<article class="examp">
+					<h3>Interest Calculator Example</h3>
+					<p>
+						Suppose you want to invest $5,000 into a high-yield savings account with a 10% annual yield,
+						compounded annually. You don't plan to add additional funds after your initial deposit. Here’s
+						how you would use the calculator above:
+					</p>
+					<ul>
+						<li><strong>Initial deposit:</strong> $5,000.</li>
+						<li>
+							<strong>Contribution amount:</strong> $0. (Since you won’t be making additional
+							contributions, enter "$0" in the field.)
+						</li>
+						<li>
+							<strong>Years of growth:</strong> 5. (You can start by entering "1", then increase this to
+							see how much you can earn over more years.)
+						</li>
+						<li><strong>Estimated rate of return:</strong> 10%.</li>
+						<li><strong>Compound frequency:</strong> Annually.</li>
+					</ul>
+					<p>After five years, you’ll have earned $3,052.55 in interest, for a total balance of $8,052.55.</p>
+					<p>
+						If you leave your money in that account for another five years, you'll earn $4,937.72 in
+						interest in those years, resulting in a total of $7,990.27 in interest over ten years, giving
+						you a final balance of $12,990.27.
+					</p>
+					<p>
+						Remember, this is just an example. Savings account annual percentage yields (APYs) are subject
+						to change at any time. For longer-term savings, there may be better places to store your money,
+						including Roth or traditional IRAs and CDs.
+					</p>
+				</article>
 			</section>
 		</main>
 
