@@ -10,23 +10,23 @@ main {
 }
 
 main header {
-	margin: 40px 0 30px;
+	margin: 5vw 0 3vw;
 	text-align: center;
 }
 
 main header h1 {
-	font-size: 40px;
+	font-size: 4vw;
 }
 
 main header p {
-	font-size: 20px;
+	font-size: 2vw;
 }
 
 .container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 40px 0;
+	margin: 5vw 0;
 }
 
 .calculator {
@@ -35,11 +35,11 @@ main header p {
 }
 
 .container .heading h3 {
-	font-size: 25px;
+	font-size: 2.5vw;
 }
 
 .formInput {
-	margin: 15px 0;
+	margin: 1.5vw 0;
 }
 
 .formInput label {
@@ -50,10 +50,11 @@ main header p {
 .formInput button,
 .formInput select {
 	width: 75%;
-	padding: 10px;
-	border: 1px solid green;
+	padding: 1vw;
+	border: 0.1vw solid green;
 	outline: none;
-	border-radius: 3px;
+	border-radius: 0.3vw;
+	font-size: 1.5vw;
 }
 
 .formInput button {
@@ -73,19 +74,19 @@ main header p {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	padding: 20px;
+	padding: 2vw;
 	width: 60%;
 	height: fit-content;
-	box-shadow: 0px 0px 8px 5px rgba(168, 161, 161, 0.541);
+	box-shadow: 0.5vw 0.5vw 1vw 0.5vw rgba(168, 161, 161, 0.541);
 }
 
 #resultTitle {
 	color: black;
-	font-size: 30px;
+	font-size: 3vw;
 }
 
 #resultAmount {
-	font-size: 40px;
+	font-size: 4vw;
 	color: darkgreen;
 	font-weight: 800;
 }
@@ -98,25 +99,100 @@ main header p {
 
 section article {
 	width: 90%;
-	margin: 20px 0;
-	background-color: rgba(161, 255, 181, 0.349);
-	padding: 20px 60px;
-	border-radius: 15px;
+	margin: 2vw 0;
+	background-color: rgba(161, 255, 181, 0.178);
+	padding: 2vw 4vw;
+	border-radius: 1.5vw;
 }
 
 section article h3 {
-	font-size: 25px;
-	margin: 0 0 10px;
+	font-size: 2.5vw;
+	margin: 0 0 1vw;
 }
 
 section article p {
-	font-size: 20px;
+	font-size: 2vw;
 }
 
 .examp ul {
-	margin: 10px 0 10px 20px;
+	margin: 1vw 0 1vw 4vw;
 }
 .examp ul li {
-	font-size: 18px;
-	margin: 5px 0;
+	font-size: 1.8vw;
+	margin: 0.5vw 0;
+}
+
+@media (max-width: 900px) {
+	.resultContainer {
+		width: 80%;
+	}
+
+	#resultTitle {
+		font-size: 2vw;
+	}
+
+	#resultAmount {
+		font-size: 3vw;
+	}
+}
+
+@media (max-width: 768px) {
+	#resultTitle {
+		font-size: 1.5vw;
+	}
+
+	#resultAmount {
+		font-size: 2vw;
+	}
+}
+
+@media (max-width: 520px) {
+	main header h1 {
+		font-size: 6vw;
+	}
+
+	main header p {
+		font-size: 3vw;
+	}
+
+	.container .heading h3 {
+		font-size: 3vw;
+	}
+
+	.formInput input,
+	.formInput button,
+	.formInput select {
+		width: 90%;
+		padding: 3vw;
+		font-size: 3vw;
+	}
+
+	.resultContainer {
+		width: 90%;
+		padding: 4vw;
+	}
+
+	#resultTitle {
+		font-size: 3vw;
+	}
+
+	#resultAmount {
+		font-size: 4vw;
+	}
+
+	section article h3 {
+		font-size: 3vw;
+	}
+
+	section article p {
+		font-size: 2.5vw;
+	}
+
+	.examp ul {
+		margin-left: 5vw;
+	}
+
+	.examp ul li {
+		font-size: 2vw;
+	}
 }
